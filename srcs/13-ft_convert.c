@@ -6,7 +6,7 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 08:10:39 by jalevesq          #+#    #+#             */
-/*   Updated: 2023/03/09 17:14:35 by jalevesq         ###   ########.fr       */
+/*   Updated: 2023/03/10 11:47:21 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ long	ft_atoi(const char *str, int *error)
 		return (error_number(error));
 	if (ft_is_sign(str[i]))
 	{
-		if (str[i++] == '-')
+		if (str[i] == '-')
 			sign *= -1;
+		if (ft_isdigit(str[i++ + 1]) == 0)
+			return (error_number(error));
 	}
-	while (ft_is_sign(str[i]))
-		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = res * 10 + str[i++] - '0';
