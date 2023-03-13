@@ -6,14 +6,14 @@
 /*   By: jalevesq <jalevesq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 11:13:26 by jalevesq          #+#    #+#             */
-/*   Updated: 2023/03/09 16:34:22 by jalevesq         ###   ########.fr       */
+/*   Updated: 2023/03/13 10:41:24 by jalevesq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
 // Function that manages which algorithm is used and the size of
-// the chunk depending on the number of numbers to sort. 
+// the chunk depending on the size of the stack. 
 void	push_swap(t_stack **stack_a, t_stack **stack_b, int size)
 {
 	set_index(*stack_a, lstcount(*stack_a));
