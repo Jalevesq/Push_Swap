@@ -27,6 +27,4 @@ The operations that can be used are:
 Each operation should be followed by a new line character.
 
 # Visualizer
-This is the [visualizer](https://github.com/o-reo/push_swap_visualizer) used during the development of the project.
-
-https://github.com/o-reo/push_swap_visualizer
+You can find the visualizer I used [here](https://github.com/o-reo/push_swap_visualizer)
